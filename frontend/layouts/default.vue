@@ -17,7 +17,7 @@
         </div>
     </div>
 </template>
-//https://www.youtube.com/watch?v=tGhMaMIYRiI&list=PL4cUxeGkcC9haQlqdCQyYmL_27TesCGPC&index=8
+
 <style scoped>
     .router-link-exact-active{
         color: #12b488;
