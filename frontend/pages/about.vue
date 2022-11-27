@@ -9,11 +9,12 @@
             Aenean commodo ligula eget dolor. Aenean massa. 
             Cum sociis natoque penatibus et magnis dis parturient montes, 
             nascetur ridiculus mus. Donec quam felis</p>
+            <div>{{ data }}</div>
     </div>
 </template>
 
 <script setup>
-
+    const { data } = await useFetch('/api/')
 </script>
 
 <style  scoped>
