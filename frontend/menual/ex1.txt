@@ -1,0 +1,12 @@
+# 문법에 대한 설명
+
+* 마진 관련
+ - q-my-md : quasar margin y(상하), margin x(좌우) md (여백)
+
+* 간격 관련
+ - q-gutter-sm : 요소 사이의 간격 설정
+
+
+* 컬러관련
+ - bg-primary : backGround 컬러
+ - text-primary : 글자 컬러
