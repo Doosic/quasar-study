@@ -1,0 +1,10 @@
+# 퀘이사 폴더 경로에 관해
+// https://quasar.dev/quasar-cli-vite/handling-vite
+  퀘이사는 폴더에 별칭이 지정되어 있는것들이 있다.
+  Vite가 올바른 경로를 지정해준다.
+
+  참고로 별칭은 추가도 가능하다!
+  해당 설정은 quasar.config.js에 고유 별칭을 추가할 수 있는데
+  이때에 jsconfig.json에 추가해주는 것이 좋다.
+  vscode에 해당 폴더를 알려주는 역할을 한다. ctrl + 마우스 클릭
+  으로 폴더를 이동하는 등... 여러가지를 돕는다.
