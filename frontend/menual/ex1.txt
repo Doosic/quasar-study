@@ -1,7 +1,11 @@
 # 문법에 대한 설명
 
-* 마진 관련
+* 마진 관련 : https://quasar.dev/style/spacing#introduction
  - q-my-md : quasar margin y(상하), margin x(좌우) md (여백)
+ - q-mx-auto: 마진 좌우를 계산해 중앙정렬 그러나 현대 브라우저는 display: flex 또는 justify-content: center; 를 권장한다.
+              flex를 주고 items-center(수직정렬) justify-center(수평정렬) 을 해주면 된다.
+              이 두가지를 한번에 하고싶다면 flex-center를 해준다.
+
 
 * 간격 관련
  - q-gutter-sm : 요소 사이의 간격 설정
@@ -10,3 +14,6 @@
 * 컬러관련
  - bg-primary : backGround 컬러
  - text-primary : 글자 컬러
+
+ * 반응형 웹 관련
+ BrakePoints : https://quasar.dev/style/breakpoints
