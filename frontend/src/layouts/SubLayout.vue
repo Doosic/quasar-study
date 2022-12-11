@@ -12,6 +12,7 @@
         />
 
         <q-toolbar-title> Quasar App </q-toolbar-title>
+        <q-btn stretch flat label="Main Layout" to="/" />
       </q-toolbar>
     </q-header>
 

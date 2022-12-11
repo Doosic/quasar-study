@@ -30,36 +30,59 @@
       </div>
     </section>
     <section>
-      <div class="row no-wrap scroll q-col-gutter-x-xl">
-        <div class="col-auto" v-for="n in 15" :key="n">
-          <article>
-            <q-avatar size="77px">
-              <q-img src="/logo.jpg" />
-            </q-avatar>
-            <div class="text-center q-mt-sm">제목</div>
-          </article>
+      <q-scroll-area style="height: 100px; max-width: auto">
+        <div class="row no-wrap q-col-gutter-x-xl">
+          <div class="col-auto" v-for="n in 15" :key="n">
+            <article>
+              <q-avatar size="70px">
+                <q-img src="/logo.jpg" />
+              </q-avatar>
+              <div class="text-center q-mt-sm">제목</div>
+            </article>
+          </div>
         </div>
-      </div>
+      </q-scroll-area>
     </section>
-    <section q-mt-xl>
-      <div class="row q-col-gutter-md">
-        <div v-for="n in 18" :key="n" class="col-12 col-sm-6 col-md-4 col-lg-3">
-          <q-card class="my-card">
-            <q-img ratio="1" src="https://cdn.quasar.dev/img/parallax2.jpg">
-              <div
-                class="absolute-bottom text-subtitle2 flex flex-center text-center"
-              >
-                Title
-              </div>
-            </q-img>
-          </q-card>
-        </div>
-      </div>
+    <section class="q-mt-xl">
+      <q-tabs
+        class="q-md-lg"
+        v-model="tab"
+        inline-label
+        switch-indicator
+        indicator-color="primary"
+      >
+        <q-route-tab
+          :ripple="false"
+          icon="edit"
+          to="/profile"
+          label="게시글"
+          exact
+        />
+        <q-route-tab
+          :ripple="false"
+          icon="bookmark_border"
+          to="/profile/saved"
+          label="저장됨"
+          exact
+        />
+        <q-route-tab
+          :ripple="false"
+          label="태그됨"
+          to="/profile/tagged"
+          icon="local_offer"
+          exact
+        />
+      </q-tabs>
+      <router-view />
     </section>
   </q-page>
 </template>
 
-<script setup></script>
+<script setup>
+import { ref } from 'vue';
+
+const tab = ref('mails');
+</script>
 
 <style lang="scss" scoped>
 .q-page {
