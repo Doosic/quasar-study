@@ -16,10 +16,21 @@
         <q-btn stretch flat label="Sub Layout" to="/sub" />
         <q-btn flat round dense :icon="darkModeIcon" @click="toggleDarkMode" />
         <!-- dark_mode-->
-        <q-btn round size="sm" class="q-ml-md" to="/profile">
+        <q-btn round size="sm" class="q-ml-md">
           <q-avatar>
             <img src="logo.jpg" />
           </q-avatar>
+          <q-menu :offset="[0, 10]">
+            <q-list style="min-width: 100px">
+              <q-item clickable v-close-popup to="/profile">
+                <q-item-section>프로필</q-item-section>
+              </q-item>
+              <q-separator />
+              <q-item clickable v-close-popup to="/auth/sign-in">
+                <q-item-section>로그아웃</q-item-section>
+              </q-item>
+            </q-list>
+          </q-menu>
         </q-btn>
       </q-toolbar>
     </q-header>
@@ -91,6 +102,12 @@ const linksList = [
   //   icon: 'school',
   //   to: '/flex-grid-2',
   // },
+  {
+    title: 'Form Handling',
+    caption: 'quasar.dev',
+    icon: 'school',
+    to: '/form-handling',
+  },
 ];
 </script>
 
