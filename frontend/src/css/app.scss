@@ -1,0 +1,14 @@
+// app global css in SCSS form
+// 전체적인 스타일 정의
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700;900&display=swap');
+
+body {
+  font-family: 'Nanum Gothic', 'sans-serif';
+}
+
+// body.body--light {
+// }
+
+body.body--dark {
+  --q-primary: #161717;
+}

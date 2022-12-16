@@ -1,0 +1,33 @@
+# 문법에 대한 설명
+
+* 마진 관련 : https://quasar.dev/style/spacing#introduction
+ - q-my-md : quasar margin y(상하), margin x(좌우) md (여백)
+ - q-mx-auto: 마진 좌우를 계산해 중앙정렬 그러나 현대 브라우저는 display: flex 또는 justify-content: center; 를 권장한다.
+              flex를 주고 items-center(수직정렬) justify-center(수평정렬) 을 해주면 된다.
+              이 두가지를 한번에 하고싶다면 flex-center를 해준다.
+
+
+* 간격 관련
+ - q-gutter-sm : 요소(아이템) 사이의 간격 설정
+
+
+* 컬러관련
+ - bg-primary : backGround 컬러
+ - text-primary : 글자 컬러
+
+ * 반응형 웹 관련
+ BrakePoints : https://quasar.dev/style/breakpoints
+
+ * 헬퍼 클래스 관련 (정말 도움되는것들이 많다.)
+ 그림자, 글자 일정 길이 이상 자르기(몇줄까지 인지도 정할 수 있다.)
+
+ * 다크모드
+ 다크모드 관련 지원해주는것이 많다. app.scss 에서 많은 설정을 해줄 수 있다.
+ 브랜드 컬러도 모드별로 바꿔서 사용할 수 도 있다.
+
+ * 엑티브 모드
+ EssentialLink.Vue 페이지 참고 active-class 사용가능
+ 다크모드, 라이트모드 별로 글자 색도 다르게 설정해 줄 수 있다.
+
+ * 로컬 스토리지 LocalStorage 도 사용 가능하다.
+ quasar.config.js 파일안에 plugins: ['LocalStorage'], 같이 입력시 사용가능

@@ -1,4 +1,3 @@
-# nest-default-setup
-nuxt-nest-default-setup
+# Quasar 학습
 
-nuxt3와 nestjs를 이용한 프로젝트 기본 셋팅 연습 및 공부한것들 적용
+개인 프로젝트에 디자인 준비를 위한 Quasar 학습
