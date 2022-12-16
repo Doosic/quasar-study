@@ -27,7 +27,12 @@ module.exports = configure(function (/* ctx */) {
     // app boot file (/src/boot)
     // --> boot files are part of "main.js"
     // https://v2.quasar.dev/quasar-cli/boot-files
-    boot: ['initialization', 'constants'],
+    boot: [
+      'initialization',
+      'constants',
+      'loading-plugin',
+      'loading-bar-plugin',
+    ],
 
     // https://v2.quasar.dev/quasar-cli-vite/quasar-config-js#css
     css: ['app.scss'],
@@ -86,6 +91,8 @@ module.exports = configure(function (/* ctx */) {
     // https://v2.quasar.dev/quasar-cli-vite/quasar-config-js#framework
     framework: {
       cssAddon: true,
+      // 간단하게 설정할때 config 사용하면 좋다.
+      // 플래그를 새워야 할때는 boot파일을 적극 이용하는게 좋다
       config: {
         screen: {
           bodyClasses: true,
@@ -103,7 +110,7 @@ module.exports = configure(function (/* ctx */) {
       // directives: [],
 
       // Quasar plugins
-      plugins: ['LocalStorage'],
+      plugins: ['LocalStorage', 'Loading', 'LoadingBar'],
     },
 
     // animations: 'all', // --- includes all animations
