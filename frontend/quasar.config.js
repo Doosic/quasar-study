@@ -32,6 +32,7 @@ module.exports = configure(function (/* ctx */) {
       'constants',
       'loading-plugin',
       'loading-bar-plugin',
+      'quasar-lang-pack',
     ],
 
     // https://v2.quasar.dev/quasar-cli-vite/quasar-config-js#css
@@ -90,6 +91,7 @@ module.exports = configure(function (/* ctx */) {
 
     // https://v2.quasar.dev/quasar-cli-vite/quasar-config-js#framework
     framework: {
+      lang: 'ko-KR',
       cssAddon: true,
       // 간단하게 설정할때 config 사용하면 좋다.
       // 플래그를 새워야 할때는 boot파일을 적극 이용하는게 좋다
