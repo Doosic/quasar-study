@@ -6,8 +6,7 @@ import { LocalStorage, Quasar } from 'quasar';
 export default boot(async (/* { app, router, ... } */) => {
   // something to do
   const val = LocalStorage.getItem('lang');
-
-  import('../../node_modules/quasar/lang/' + val).then(lang => {
+  import(`../../node_modules/quasar/lang/${val}`).then(lang => {
     Quasar.lang.set(lang.default);
   });
 });
